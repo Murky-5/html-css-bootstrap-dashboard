@@ -1,6 +1,10 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- -->
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
@@ -37,15 +41,187 @@
             </div>
           </nav>
     </navbar>
-    <main>
-        <div class="container justify-content-center">
+    <main class="d-flex justify-content-center">
+        <div class="container row gap-3">
             <div class="row col-9">
-                <div class="justify-content-space-between"></div>
-                <div></div>
+                <div class="d-flex justify-content-between py-4">
+                  <h3 class="fw-normal">Catalogo Libri</h3>
+                  <button type="button" class="btn btn-primary">Aggiungi Libro</button>
+                </div>
+                <div>
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th colspan="2">Titolo</th>
+                        <th>Data prestito</th>
+                        <th>Stato</th>
+                        <th>Azioni</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td colspan="2" class="fw-light" style="font-size: 0.8rem;">I pilastri della terra</td>
+                        <td>-</td>
+                        <td>
+                          <button type="button" class="btn btn-primary text-align-center fw-bold" style="--bs-btn-padding-y: 0rem; --bs-btn-padding-x: .35rem; --bs-btn-font-size: .7rem;">
+                            Disponibile
+                          </button>
+                        </td>
+                        <td>
+                          <i class="fa-solid fa-pen fa-sm border border-secondary text-secondary rounded p-2 py-3 "></i>
+                          <i class="fa-solid fa-trash fa-sm border border-secondary text-secondary rounded p-2 py-3"></i></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" class="fw-light" style="font-size: .8rem;">I promessi sposi</td>
+                        <td>-</td>
+                        <td>
+                          <button type="button" class="btn btn-primary text-align-center fw-bold" style="--bs-btn-padding-y: 0rem; --bs-btn-padding-x: .35rem; --bs-btn-font-size: .7rem;">
+                            Disponibile
+                          </button>
+                        </td>
+                        <td>
+                          <i class="fa-solid fa-pen fa-sm border border-secondary text-secondary rounded p-2 py-3 "></i>
+                          <i class="fa-solid fa-trash fa-sm border border-secondary text-secondary rounded p-2 py-3"></i></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" class="fw-light" style="font-size: .8rem;">Il signore degli anelli</td>
+                        <td>18/10/2023</td>
+                        <td>
+                          <button type="button" class="btn btn-primary text-align-center fw-bold" style="--bs-btn-padding-y: 0rem; --bs-btn-padding-x: .35rem; --bs-btn-font-size: .7rem;">
+                            Disponibile
+                          </button>
+                        </td>
+                        <td>
+                          <i class="fa-solid fa-pen fa-sm border border-secondary text-secondary rounded p-2 py-3 "></i>
+                          <i class="fa-solid fa-trash fa-sm border border-secondary text-secondary rounded p-2 py-3"></i></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" class="fw-light" style="font-size: .8rem;">Harry Potter e la pietra filosofale</td>
+                        <td>-</td>
+                        <td>
+                          <button type="button" class="btn btn-primary text-align-center fw-bold" style="--bs-btn-padding-y: 0rem; --bs-btn-padding-x: .35rem; --bs-btn-font-size: .7rem;">
+                            Disponibile
+                          </button>
+                        </td>
+                        <td>
+                          <i class="fa-solid fa-pen fa-sm border border-secondary text-secondary rounded p-2 py-3 "></i>
+                          <i class="fa-solid fa-trash fa-sm border border-secondary text-secondary rounded p-2 py-3"></i></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" class="fw-light" style="font-size: .8rem;">Il codice Da Vinci</td>
+                        <td>-</td>
+                        <td>
+                          <button type="button" class="btn btn-primary text-align-center fw-bold" style="--bs-btn-padding-y: 0rem; --bs-btn-padding-x: .35rem; --bs-btn-font-size: .7rem;">
+                            Disponibile
+                          </button>
+                        </td>
+                        <td>
+                          <i class="fa-solid fa-pen fa-sm border border-secondary text-secondary rounded p-2 py-3 "></i>
+                          <i class="fa-solid fa-trash fa-sm border border-secondary text-secondary rounded p-2 py-3"></i></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" class="fw-light" style="font-size: .8rem;">Shining</td>
+                        <td>-</td>
+                        <td>
+                          <button type="button" class="btn btn-primary text-align-center fw-bold" style="--bs-btn-padding-y: 0rem; --bs-btn-padding-x: .35rem; --bs-btn-font-size: .7rem;">
+                            Disponibile
+                          </button>
+                        </td>
+                        <td>
+                          <i class="fa-solid fa-pen fa-sm border border-secondary text-secondary rounded p-2 py-3 "></i>
+                          <i class="fa-solid fa-trash fa-sm border border-secondary text-secondary rounded p-2 py-3"></i></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" class="fw-light" style="font-size: .8rem;">La divina commedia</td>
+                        <td>21/09/2023</td>
+                        <td>
+                          <button type="button" class="btn btn-primary text-align-center fw-bold" style="--bs-btn-padding-y: 0rem; --bs-btn-padding-x: .35rem; --bs-btn-font-size: .7rem;">
+                            Disponibile
+                          </button>
+                        </td>
+                        <td>
+                          <i class="fa-solid fa-pen fa-sm border border-secondary text-secondary rounded p-2 py-3 "></i>
+                          <i class="fa-solid fa-trash fa-sm border border-secondary text-secondary rounded p-2 py-3"></i></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" class="fw-light" style="font-size: .8rem;">Il trono di spade</td>
+                        <td>-</td>
+                        <td>
+                          <button type="button" class="btn btn-primary text-align-center fw-bold" style="--bs-btn-padding-y: 0rem; --bs-btn-padding-x: .35rem; --bs-btn-font-size: .7rem;">
+                            Disponibile
+                          </button>
+                        </td>
+                        <td>
+                          <i class="fa-solid fa-pen fa-sm border border-secondary text-secondary rounded p-2 py-3 "></i>
+                          <i class="fa-solid fa-trash fa-sm border border-secondary text-secondary rounded p-2 py-3"></i></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" class="fw-light" style="font-size: .8rem;">Il mondo di Sofia</td>
+                        <td>-</td>
+                        <td>
+                          <button type="button" class="btn btn-primary text-align-center fw-bold" style="--bs-btn-padding-y: 0rem; --bs-btn-padding-x: .35rem; --bs-btn-font-size: .7rem;">
+                            Disponibile
+                          </button>
+                        </td>
+                        <td>
+                          <i class="fa-solid fa-pen fa-sm border border-secondary text-secondary rounded p-2 py-3 "></i>
+                          <i class="fa-solid fa-trash fa-sm border border-secondary text-secondary rounded p-2 py-3"></i></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" class="fw-light" style="font-size: .8rem;">Le cronache di Narnia: il leone, la strega e l'armadio</td>
+                        <td>25/07/2023</td>
+                        <td>
+                          <button type="button" class="btn btn-primary text-align-center fw-bold" style="--bs-btn-padding-y: 0rem; --bs-btn-padding-x: .35rem; --bs-btn-font-size: .7rem;">
+                            Disponibile
+                          </button>
+                        </td>
+                        <td>
+                          <i class="fa-solid fa-pen fa-sm border border-secondary text-secondary rounded p-2 py-3 "></i>
+                          <i class="fa-solid fa-trash fa-sm border border-secondary text-secondary rounded p-2 py-3"></i></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" class="fw-light" style="font-size: .8rem;">Il piccolo principe</td>
+                        <td>-</td>
+                        <td>
+                          <button type="button" class="btn btn-primary text-align-center fw-bold" style="--bs-btn-padding-y: 0rem; --bs-btn-padding-x: .35rem; --bs-btn-font-size: .7rem;">
+                            Disponibile
+                          </button>
+                        </td>
+                        <td>
+                          <i class="fa-solid fa-pen fa-sm border border-secondary text-secondary rounded p-2 py-3 "></i>
+                          <i class="fa-solid fa-trash fa-sm border border-secondary text-secondary rounded p-2 py-3"></i></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" class="fw-light" style="font-size: .8rem;">La storia infinita</td>
+                        <td>-</td>
+                        <td>
+                          <button type="button" class="btn btn-primary text-align-center fw-bold" style="--bs-btn-padding-y: 0rem; --bs-btn-padding-x: .35rem; --bs-btn-font-size: .7rem;">
+                            Disponibile
+                          </button>
+                        </td>
+                        <td>
+                          <i class="fa-solid fa-pen fa-sm border border-secondary text-secondary rounded p-2 py-3 "></i>
+                          <i class="fa-solid fa-trash fa-sm border border-secondary text-secondary rounded p-2 py-3"></i></button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
             </div>
             <div class="row col-3">
-                <div class="card">
-                    <h5 class="card-header">Featured</h5>
+                <div class="card px-0">
+                    <h5 class="card-header h3 fw-normal">Featured</h5>
                     <div class="card-body">
                         <div class="card">
                             <ul class="list-group list-group-flush">
@@ -59,8 +235,8 @@
                           </div>
                     </div>
                 </div>
-                <div class="card">
-                    <h5 class="card-header">Featured</h5>
+                <div class="card px-0">
+                    <h5 class="card-header h3 fw-normal">Featured</h5>
                     <div class="card-body">
                         <div class="accordion accordion-flush" id="accordionFlushExample">
                             <div class="accordion-item">
