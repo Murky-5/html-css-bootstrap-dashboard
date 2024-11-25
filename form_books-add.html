@@ -14,17 +14,17 @@
     <navbar>
         <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img src="./img/duck.png" class="mw-100" alt="logo" width="60px"></a>
+              <a class="navbar-brand" href="./index.html"><img src="./img/duck.png" class="mw-100" alt="logo" width="60px"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" aria-disabled="true">Catalogo Libri</a>
+                    <a class="nav-link" aria-disabled="true" href="./index.html">Catalogo Libri</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" aria-disabled="true">Anagrafica</a>
@@ -51,50 +51,52 @@
         <div class="container">
             <div class="row flex-direction-column flex-wrap">
                 <div>
-                  <h3 class="fw-semibold py-4">Catalogo Libri</h3>
+                  <h3 class="fw-semibold py-4">Nuovo Libro</h3>
                   <form class="row g-3 justify-content-center">
-                    <div class="col-md-6">
-                      <label for="inputEmail4" class="form-label">Email</label>
-                      <input type="email" class="form-control" id="inputEmail4">
+                    <div class="col-md-6 pe-3">
+                      <label for="inputEmail4" class="form-label">Nome Autore</label>
+                      <input type="email" class="form-control" id="inputEmail4" placeholder="Inserisci il nome dell'autore">
                     </div>
                     <div class="col-md-6">
-                      <label for="inputPassword4" class="form-label">Password</label>
-                      <input type="password" class="form-control" id="inputPassword4">
+                      <label for="inputPassword4" class="form-label">Cognome Autore</label>
+                      <input type="text" class="form-control" id="inputPassword4" placeholder="Inserisci il cognome dell'autore">
                     </div>
                     <div class="col-12">
-                      <label for="inputAddress" class="form-label">Address</label>
-                      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                      <label for="inputAddress" class="form-label">Titolo</label>
+                      <input type="text" class="form-control" id="inputAddress" placeholder="Inserisci il titolo del libro">
+                      <option class="text-secondary">Titolo versione italiana</option>
                     </div>
-                    <div class="col-md-4">
-                      <label for="inputState" class="form-label">State</label>
+                    <div class="col-md-4 pe-md-3">
+                      <label for="inputState" class="form-label">Genere</label>
                       <select id="inputState" class="form-select">
-                        <option selected>Choose...</option>
-                        <option>...</option>
+                        <option selected>Scegli il genere</option>
+                        <option>Non me lo di</option>
                       </select>
                     </div>
-                    <div class="col-md-4">
-                      <label for="inputCity" class="form-label">City</label>
-                      <input type="text" class="form-control" id="inputCity">
+                    <div class="col-md-4 pe-md-3">
+                      <label for="inputCity" class="form-label">Anno Di Pubblicazione</label>
+                      <input type="text" class="form-control" id="inputCity"  placeholder="Inserisci l'anno"> <!-- name="date" value=""  in caso di colore, l'imput verrà impostato sul niente (con la data no)-->
                     </div>
-                    <div class="col-md-4">
-                      <label for="inputZip" class="form-label">Zip</label>
-                      <input type="text" class="form-control" id="inputZip">
+                    <div class="col-md-4 pe-md-3">
+                      <label for="inputZip" class="form-label">ISBN#</label>
+                      <input type="text" class="form-control" id="inputZip" placeholder="Inserisci il codice ISBN#">
                     </div>
-                    <hr class="my-4" style="width: calc(100% - 20px);"/>
+                    <hr class="mt-5" style="width: calc(100% - 20px);"/>
+                    <label for="floatingTextarea2" class="form-label">Note</label>
                     <div class="form-floating m-0">
                       <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                      <label for="floatingTextarea2">Comments</label>
+                      <label for="floatingTextarea2" class="text-secondary">Inserisci eventuali note sul libro</label>
                     </div>
                     <div class="col-12">
                       <div class="form-check">
                         <input class="form-check-input" type="checkbox" id="gridCheck">
-                        <label class="form-check-label" for="gridCheck">
-                          Check me out
+                        <label class="form-check-label" for="gridCheck" placeholder="Inserisci eventuali note sul libro">
+                          Disponibile anche in digitale
                         </label>
                       </div>
                     </div>
                     <div class="col-12">
-                      <button type="submit" class="btn btn-primary">Sign in</button>
+                      <button type="submit" class="btn btn-primary" href="./index.html">Aggiungi Libro</button>
                     </div>
                   </form>
                 </div>
